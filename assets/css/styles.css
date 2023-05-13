@@ -114,14 +114,14 @@ img{
     padding: 5.5rem 0 1rem;
 }
 
-.section-tittle,
-.section-tittle-center{
+.section-title,
+.section-title-center{
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2);
     line-height: 140%; 
 }
 
-.section-tittle-center{
+.section-title-center{
     text-align: center;
 }
 
@@ -246,4 +246,57 @@ img{
 .home_img{
     width: 200px;
     justify-self: center;
+}
+
+.home_title{
+    font-size: var(--big-font-size);
+    line-height: 140%;
+    margin-bottom: var(--mb-1);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2-5)
+}
+
+.home_social{
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    display: grid; /* taşıyıcı içindeki elemanları satır ve sütun şeklinde konumlandırmayı sağlar */
+    justify-items: center;
+    row-gap: 3.5rem;
+}
+
+.home_social-follow{
+    font-weight: var(--font-medium);
+    font-size: var(--smaller-font-size);
+    color: var(--first-color);
+    position: relative; /* kendisinden sonraki öge absolute pozisyon alacak */
+    transform: rotate(90deg);
+}
+
+.home_social-follow::after{ /* ::after ile belirttiğimiz etiketlerin sonuna metin eklenmesi sağlanır */
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--first-color);
+    right: -45%;
+    top: 50%;
+}
+
+.home_social-links{
+    display: inline-flex; /* ögelere satır içi esneklik verilebilir */
+    flex-direction: column;
+    row-gap: .25rem;
+}
+
+.home_social-link{
+    font-size: 1rem;
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home_social-link:hover{
+    transform: translateX(.25rem);
 }
