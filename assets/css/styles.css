@@ -300,3 +300,125 @@ img{
 .home_social-link:hover{
     transform: translateX(.25rem);
 }
+
+/* button */
+.button{
+    display: inline-block; /* etiketler üzerinde genişlik ve yükseklik ayarlamaya izin verir */
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon{
+    transition: .3s;
+}
+
+.button:hover .button_icon{
+    transform: translateX(.25rem);
+}
+
+.button--flex{
+    display: inline-flex; /* ögelere satır içi esneklik verilebilir */
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.button--link{
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+.button--link:hover .button_icon{
+    transform: translateX(.25rem);
+}
+
+
+/* --- about --- */
+.about_container{
+    row-gap: 2rem;
+}
+
+.about_img{
+    width: 280px;
+    justify-self: center; /* bu tanımlama ile sadece tanımlı ögenin yataydaki hizasını ayarlanır */
+}
+
+.about_tittle{
+    margin-bottom: var(--mb-1);
+}
+
+.about_description{
+    margin-bottom: var(--mb-2);
+}
+
+.about_details{
+    display: grid; /* taşıyıcı içindeki elemanları satır ve sütun şeklinde konumlandırmayı sağlar */
+    row-gap: 1rem;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_details-description{
+    display: inline-flex; /* ögelere satır içi esneklik verilebilir */
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+}
+
+.about_details-icon{
+    font-size: 1rem;
+    color: var(--first-color);
+    margin-top: .10rem;
+}
+
+
+/* --- steps --- */
+.steps_bg{
+    background-color: var(--first-color);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.steps_container{
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.steps_title{
+    color: #FFF;
+}
+
+.steps_card{
+    background-color: var(--container-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.steps_card-number{
+    display: inline-block; /* etiketler üzerinde genişlik ve yükseklik ayarlamaya izin verir */
+    background-color: var(--first-color-alt);
+    color: #FFF;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+    transition: .3s;
+}
+
+.steps_card-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.steps_card-description{
+    font-size: var(--small-font-size);
+}
+
+.steps_card:hover .steps_card-number{
+    transform: translateY(-.25rem);
+}
