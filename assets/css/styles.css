@@ -492,3 +492,81 @@ img{
 .product_card:hover .product_img{
     transform: translateY(-.5rem);
 }
+
+/* --- questions --- */
+
+.questions{
+    background-color: var(--first-color-lighten);
+}
+
+.questions_container{
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.questions_group{
+    display: grid; /* taşıyıcı içindeki elemanları satır ve sütun şeklinde konumlandırmayı sağlar */
+    row-gap: 1.5rem;
+}
+
+.questions_item{
+    background-color: var(--container-color);
+    border-radius: .25rem;
+}
+
+.questions_item-title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.questions_icon{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.questions_description{
+    font-size: var(--smaller-font-size);
+    padding: 0 1.25rem 1.25rem 2.5rem;
+}
+
+.questions_header{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding: .75rem .5rem;
+    cursor: pointer;
+}
+
+.questions_content{
+    overflow: hidden;
+    height: 0;
+}
+
+.questions_item,
+.questions_header,
+.questions_item-title,
+.questions_icon,
+.questions_description,
+.questions_content{
+    transition: .3s;
+}
+
+.questions_item:hover{
+    box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
+}
+
+/* rotate icon, change color of titles and background */
+.accordion-open .questions_header,
+.accordion-open .questions_content{
+    background-color: var(--first-color);
+}
+
+.accordion-open .questions_item-title,
+.accordion-open .questions_description,
+.accordion-open .questions_icon{
+    color: #FFF;
+}
+
+.accordion-open .questions_icon{
+    transform: rotate(45deg);
+}
