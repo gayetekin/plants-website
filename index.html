@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- fontawesome link for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Plants Website</title>
 </head>
 <body>
@@ -44,9 +45,13 @@
                 </div>
             </div>
 
-            <div class="nav_toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <div class="nav_btns">
+                <!-- theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>  
         </nav>
     </header>
 
@@ -250,7 +255,7 @@
 
             <!-- *** questions *** -->
             <section class="questions section" id="faqs">
-                <h2 class="section_title-center question_title container">
+                <h2 class="section_title-center questions_title container">
                     Some common questions <br> were often asked
                 </h2>
     
@@ -480,6 +485,13 @@
             <p class="footer_copy">&#169; All rigths reserved</p>
         </footer>
     
+        <!-- ** scroll up *** -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up scrollup_icon"></i>
+        </a>
+
+        <!-- scroll reveal -->
+        <script src="assets/js/scrollreveal.min.js"></script>
     
     <!-- script -->
     <script src="assets/js/main.js"></script>
